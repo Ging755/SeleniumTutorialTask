@@ -9,14 +9,14 @@ namespace SeleniumTaskFirst
 {
     class Program
     {
-        //Browser Refrence
-        IWebDriver driver = new ChromeDriver();
 
         [SetUp]
         public void Initilize()
         {
+            MainWebDriver.Driver = new ChromeDriver();
+
             //Naviagte to Google
-            driver.Navigate().GoToUrl("https://demosite.executeautomation.com/index.html?UserName=&Password=&Login=Login");
+            MainWebDriver.Driver.Navigate().GoToUrl("https://demosite.executeautomation.com/index.html?UserName=&Password=&Login=Login");
             Console.WriteLine("Navigated to URL");
         }
 
@@ -24,15 +24,15 @@ namespace SeleniumTaskFirst
         public void ExecuteTest()
         {
             //Selecting Title
-            ActionMethods.SelectDropDownValue(driver, "Mr.", "TitleId", ParameterType.Name);
-            Console.WriteLine("Selected title is " + GetMethods.GetSelectedDropDownText(driver, "TitleId", ParameterType.Name));
+            ActionMethods.SelectDropDownValue("Mr.", "TitleId", ParameterType.Name);
+            Console.WriteLine("Selected title is " + GetMethods.GetSelectedDropDownText("TitleId", ParameterType.Name));
 
             //Entering text
-            ActionMethods.SendKeysElement(driver, "Denis", "FirstName", ParameterType.Id);
-            Console.WriteLine("Text from First Name is " + GetMethods.GetElementText(driver, "FirstName", ParameterType.Id));
+            ActionMethods.SendKeysElement("Denis", "FirstName", ParameterType.Id);
+            Console.WriteLine("Text from First Name is " + GetMethods.GetElementText("FirstName", ParameterType.Id));
 
             //Clicking Save button
-            ActionMethods.ClickElement(driver, "Save", ParameterType.Name);
+            ActionMethods.ClickElement("Save", ParameterType.Name);
         }
 
         [TearDown]
@@ -40,7 +40,7 @@ namespace SeleniumTaskFirst
         {
             //Wait to be able to observe browser actions
             Thread.Sleep(10000);
-            driver.Close();
+            MainWebDriver.Driver.Close();
         }
     }
 }

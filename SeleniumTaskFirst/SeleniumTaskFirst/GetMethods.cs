@@ -15,22 +15,21 @@ namespace SeleniumTaskFirst
         /// <param name="driver"></param>
         /// <param name="parameterValue"></param>
         /// <param name="parameterType">default is Id</param>
-        public static string GetElementText(IWebDriver driver, string parameterValue, ParameterType? parameterType)
+        public static string GetElementText(string parameterValue, ParameterType? parameterType)
         {
             string text;
             switch (parameterType)
             {
                 case ParameterType.Id:
-                    var temp = driver.FindElement(By.Id(parameterValue));
-                    text = driver.FindElement(By.Id(parameterValue)).GetAttribute("value");
+                    text = MainWebDriver.Driver.FindElement(By.Id(parameterValue)).GetAttribute("value");
                     break;
 
                 case ParameterType.Name:
-                    text = driver.FindElement(By.Name(parameterValue)).GetAttribute("value");
+                    text = MainWebDriver.Driver.FindElement(By.Name(parameterValue)).GetAttribute("value");
                     break;
 
                 default:
-                    text = driver.FindElement(By.Id(parameterValue)).GetAttribute("value");
+                    text = MainWebDriver.Driver.FindElement(By.Id(parameterValue)).GetAttribute("value");
                     break;
             }
 
@@ -43,22 +42,22 @@ namespace SeleniumTaskFirst
         /// <param name="driver"></param>
         /// <param name="parameterValue"></param>
         /// <param name="parameterType">default is Id</param>
-        public static string GetSelectedDropDownText(IWebDriver driver, string parameterValue, ParameterType? parameterType)
+        public static string GetSelectedDropDownText(string parameterValue, ParameterType? parameterType)
         {
             string text;
 
             switch (parameterType)
             {
                 case ParameterType.Id:
-                    text = new SelectElement(driver.FindElement(By.Id(parameterValue))).SelectedOption.Text;
+                    text = new SelectElement(MainWebDriver.Driver.FindElement(By.Id(parameterValue))).SelectedOption.Text;
                     break;
 
                 case ParameterType.Name:
-                    text =  new SelectElement(driver.FindElement(By.Name(parameterValue))).SelectedOption.Text;
+                    text =  new SelectElement(MainWebDriver.Driver.FindElement(By.Name(parameterValue))).SelectedOption.Text;
                     break;
 
                 default:
-                    text =  new SelectElement(driver.FindElement(By.Id(parameterValue))).SelectedOption.Text;
+                    text =  new SelectElement(MainWebDriver.Driver.FindElement(By.Id(parameterValue))).SelectedOption.Text;
                     break;
             }
 

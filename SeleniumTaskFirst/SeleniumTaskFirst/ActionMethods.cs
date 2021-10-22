@@ -18,20 +18,20 @@ namespace SeleniumTaskFirst
         /// <param name="value"></param>
         /// <param name="parameterValue"></param>
         /// <param name="parameterType">default is Id</param>
-        public static void SendKeysElement(IWebDriver driver,string value, string parameterValue, ParameterType? parameterType)
+        public static void SendKeysElement(string value, string parameterValue, ParameterType? parameterType)
         {
             switch (parameterType)
             {
                 case ParameterType.Id:
-                    driver.FindElement(By.Id(parameterValue)).SendKeys(value);
+                    MainWebDriver.Driver.FindElement(By.Id(parameterValue)).SendKeys(value);
                     break;
 
                 case ParameterType.Name:
-                    driver.FindElement(By.Name(parameterValue)).SendKeys(value);
+                    MainWebDriver.Driver.FindElement(By.Name(parameterValue)).SendKeys(value);
                     break;
 
                 default:
-                    driver.FindElement(By.Id(parameterValue)).SendKeys(value);
+                    MainWebDriver.Driver.FindElement(By.Id(parameterValue)).SendKeys(value);
                     break;
             }
         }
@@ -43,20 +43,20 @@ namespace SeleniumTaskFirst
         /// <param name="driver"></param>
         /// <param name="parameterValue"></param>
         /// <param name="parameterType">default is Id</param>
-        public static void ClickElement(IWebDriver driver, string parameterValue, ParameterType? parameterType)
+        public static void ClickElement(string parameterValue, ParameterType? parameterType)
         {
             switch (parameterType)
             {
                 case ParameterType.Id:
-                    driver.FindElement(By.Id(parameterValue)).Click();
+                    MainWebDriver.Driver.FindElement(By.Id(parameterValue)).Click();
                     break;
 
                 case ParameterType.Name:
-                    driver.FindElement(By.Name(parameterValue)).Click();
+                    MainWebDriver.Driver.FindElement(By.Name(parameterValue)).Click();
                     break;
 
                 default:
-                    driver.FindElement(By.Id(parameterValue)).Click();
+                    MainWebDriver.Driver.FindElement(By.Id(parameterValue)).Click();
                     break;
             }
         }
@@ -68,20 +68,20 @@ namespace SeleniumTaskFirst
         /// <param name="value"></param>
         /// <param name="parameterValue"></param>
         /// <param name="parameterType">default is Id</param>
-        public static void SelectDropDownValue(IWebDriver driver, string value, string parameterValue, ParameterType? parameterType)
+        public static void SelectDropDownValue(string value, string parameterValue, ParameterType? parameterType)
         {
             switch (parameterType)
             {
                 case ParameterType.Id:
-                    new SelectElement(driver.FindElement(By.Id(parameterValue))).SelectByText(value);
+                    new SelectElement(MainWebDriver.Driver.FindElement(By.Id(parameterValue))).SelectByText(value);
                     break;
 
                 case ParameterType.Name:
-                    new SelectElement(driver.FindElement(By.Name(parameterValue))).SelectByText(value);
+                    new SelectElement(MainWebDriver.Driver.FindElement(By.Name(parameterValue))).SelectByText(value);
                     break;
 
                 default:
-                    new SelectElement(driver.FindElement(By.Id(parameterValue))).SelectByText(value);
+                    new SelectElement(MainWebDriver.Driver.FindElement(By.Id(parameterValue))).SelectByText(value);
                     break;
             }
         }
