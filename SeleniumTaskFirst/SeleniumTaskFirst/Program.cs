@@ -23,6 +23,14 @@ namespace SeleniumTaskFirst
         [Test]
         public void ExecuteTest()
         {
+            //Paged Object
+            FormPageObject page = new FormPageObject();
+
+            page.FirstName.SendKeys("Denis");
+            page.SaveButton.Click();
+
+
+            /*
             //Selecting Title
             ActionMethods.SelectDropDownValue("Mr.", "TitleId", ParameterType.Name);
             Console.WriteLine("Selected title is " + GetMethods.GetSelectedDropDownText("TitleId", ParameterType.Name));
@@ -33,6 +41,7 @@ namespace SeleniumTaskFirst
 
             //Clicking Save button
             ActionMethods.ClickElement("Save", ParameterType.Name);
+            */
         }
 
         [TearDown]
