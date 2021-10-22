@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4DgM8xVifu6Gbmz6eas1eM87J03+IZIMi1kJcMM6U/MybQJWZ2RD7R8zRfxG98pTDCsNngL8LlBTCZrRtSB8Fw==",
+  "dgSpecHash": "2n1YpFtT3R4vLcyGZ+OFZHMK2UOidf/p7IZSP4hQWmGXwETgurRKz4X4PHp/0fJkPWS56P5xS4TbzgzWDgU06A==",
   "success": true,
   "projectFilePath": "D:\\Visual Studio\\Repos\\SeleniumTask1\\SeleniumTaskFirst\\SeleniumTaskFirst\\SeleniumTaskFirst.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\selenium.support\\4.0.1\\selenium.support.4.0.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\selenium.webdriver.chromedriver\\95.0.4638.1700\\selenium.webdriver.chromedriver.95.0.4638.1700.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"

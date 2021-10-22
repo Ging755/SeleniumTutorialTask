@@ -14,7 +14,7 @@ namespace SeleniumTaskFirst
         public void Initilize()
         {
             //Naviagte to Google
-            driver.Navigate().GoToUrl("http://google.com");
+            driver.Navigate().GoToUrl("https://demosite.executeautomation.com/index.html?UserName=&Password=&Login=Login");
             Console.WriteLine("Navigated to URL");
         }
 
