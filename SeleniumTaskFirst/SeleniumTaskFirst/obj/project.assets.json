@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Chromium.ChromeDriver/2.37.0": {
-        "type": "package"
-      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -25,25 +22,16 @@
         "runtime": {
           "lib/netstandard2.1/WebDriver.dll": {}
         }
+      },
+      "Selenium.WebDriver.ChromeDriver/95.0.4638.1700": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
       }
     }
   },
   "libraries": {
-    "Chromium.ChromeDriver/2.37.0": {
-      "sha512": "p/5WFR9H4RN4/oTC4z1TWXVjJ94N+Tp9F5PBE5LcmGf17uh5Xvt9UkjyEnUgRPjMG+zHyDmBVxR6Zi0/1Npkqg==",
-      "type": "package",
-      "path": "chromium.chromedriver/2.37.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "chromium.chromedriver.2.37.0.nupkg.sha512",
-        "chromium.chromedriver.nuspec",
-        "content/chromedriver.exe",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -93,12 +81,30 @@
         "selenium.webdriver.4.0.1.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "Selenium.WebDriver.ChromeDriver/95.0.4638.1700": {
+      "sha512": "RuziiapHW2Yhw77AuvWmACzPOjjw7QdoSh9rhXxB+brO5ihsJE4V3xVY7tYX1VxKJOjRjB6ITAzmavlA1StkGw==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/95.0.4638.1700",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.95.0.4638.1700.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Chromium.ChromeDriver >= 2.37.0",
-      "Selenium.WebDriver >= 4.0.1"
+      "Selenium.WebDriver >= 4.0.1",
+      "Selenium.WebDriver.ChromeDriver >= 95.0.4638.1700"
     ]
   },
   "packageFolders": {
@@ -145,13 +151,13 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "Chromium.ChromeDriver": {
-            "target": "Package",
-            "version": "[2.37.0, )"
-          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.0.1, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[95.0.4638.1700, )"
           }
         },
         "imports": [

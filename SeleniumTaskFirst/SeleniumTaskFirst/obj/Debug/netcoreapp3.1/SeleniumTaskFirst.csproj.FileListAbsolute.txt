@@ -1,0 +1,16 @@
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.exe
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.deps.json
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.runtimeconfig.json
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.runtimeconfig.dev.json
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.dll
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\SeleniumTaskFirst.pdb
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.csproj.AssemblyReference.cache
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.AssemblyInfoInputs.cache
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.AssemblyInfo.cs
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.dll
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.pdb
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.genruntimeconfig.cache
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\WebDriver.dll
