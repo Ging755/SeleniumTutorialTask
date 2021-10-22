@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gy1fWif1mGKK8ocyVgo0qpVYHaQDVIwjNnzUmtjUDmpXQ/YIoqi+VUjYKPPDgSU2K/LCm3L47VTyHPSxW0atrA==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio\\Repos\\SeleniumTask1\\SeleniumTaskFirst\\SeleniumTaskFirst\\SeleniumTaskFirst.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Denis\\.nuget\\packages\\chromium.chromedriver\\2.37.0\\chromium.chromedriver.2.37.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
