@@ -98,3 +98,4 @@ D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Deb
 D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\obj\Debug\netcoreapp3.1\SeleniumTaskFirst.csproj.CopyComplete
+D:\Visual Studio\Repos\SeleniumTask1\SeleniumTaskFirst\SeleniumTaskFirst\bin\Debug\netcoreapp3.1\WebDriver.Support.dll

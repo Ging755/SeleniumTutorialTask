@@ -2,6 +2,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Threading;
+using static SeleniumTaskFirst.PropertyType;
 
 namespace SeleniumTaskFirst
 {
@@ -21,22 +23,23 @@ namespace SeleniumTaskFirst
         [Test]
         public void ExecuteTest()
         {
-            //Find cookie confirm button
-            IWebElement confirmButton = driver.FindElement(By.Id("L2AGLb"));
-            //Click cookie confirm button
-            confirmButton?.Click();
-            Console.WriteLine("Confirmed cookie button");
+            //Selecting Title
+            ActionMethods.SelectDropDownValue(driver, "Mr.", "TitleId", ParameterType.Name);
+            Console.WriteLine("Selected title is " + GetMethods.GetSelectedDropDownText(driver, "TitleId", ParameterType.Name));
 
-            //Find search bar
-            IWebElement element = driver.FindElement(By.Name("q"));
-            //Send text to search bar
-            element.SendKeys("This is Selenium test");
-            Console.WriteLine("Text entered in search bar");
+            //Entering text
+            ActionMethods.SendKeysElement(driver, "Denis", "FirstName", ParameterType.Id);
+            Console.WriteLine("Text from First Name is " + GetMethods.GetElementText(driver, "FirstName", ParameterType.Id));
+
+            //Clicking Save button
+            ActionMethods.ClickElement(driver, "Save", ParameterType.Name);
         }
 
         [TearDown]
         public void CleanUp()
         {
+            //Wait to be able to observe browser actions
+            Thread.Sleep(10000);
             driver.Close();
         }
     }
